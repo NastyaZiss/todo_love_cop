@@ -71,7 +71,7 @@ class _ChartState extends State<Chart> {
             style: TextStyle(color: Colors.grey, fontSize: 10),
           ),
           const SizedBox(
-            height: 12,
+            height: 1,
           ),
           Text(
             "Programiss",

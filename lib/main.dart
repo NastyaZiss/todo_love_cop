@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:todo_love/pages/Drawerhiden/hidendrawer.dart';
+import 'package:todo_love/pages/splash_screen.dart';
 import 'data/shared/Task_saved.dart';
 import 'data/thems.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  
-  await TaskerPreference.init(); // for initial SharedPerfomance .. 
+
+  await TaskerPreference.init(); // for initial SharedPerfomance ..
   runApp(const MyApp());
 }
 
@@ -26,8 +27,7 @@ class MyApp extends StatelessWidget {
           themeMode: themProvider.themeMode,
           darkTheme: Mytheme.darkthem,
           theme: Mytheme.lightthem,
-          home: HidenDrawer(),
+          home: Splashscreen(),
         );
       });
 }
-

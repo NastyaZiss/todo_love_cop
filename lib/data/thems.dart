@@ -17,7 +17,7 @@ class Mytheme {
       primaryColor: Colors.white,
       cardColor: const Color(0xff0A155A),
       floatingActionButtonTheme: const FloatingActionButtonThemeData(
-          backgroundColor: Color(0xFFFF00FF)));
+          backgroundColor: Color.fromRGBO(255, 0, 255, 1)));
 
   static final lightthem = ThemeData(
     scaffoldBackgroundColor: const Color(0xffF4F6FD),
